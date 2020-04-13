@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "Accueil";
+}
+
+<div class="jumbotron">
+    <h1>ANDRÉ PEINTURE DÉCORATION</h1>
+    <p class="lead">
+        <h3>
+            Bellevue, <br />
+            45260 Chailly-en-Gatinais <br />
+        </h3>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>
+                    Tel : +33 2.38.96.24.08                     
+                </h3>
+            </div>
+
+            <div class="col-md-4">
+                <h3>
+                    Port : +33 6.87.91.16.91
+                </h3>                
+            </div>
+
+        </div>
+
+        <h2>Horaires d'Ouvertures</h2>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Lundi au Vendredi </h3>
+                <h4>8h30 - 21h00</h4>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Samedi</h3>
+                <h4>9h30 - 19h00</h4>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Dimanche</h3>
+                <h4>10h00 - 12h00</h4>
+            </div>
+        </div>
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Compétences</h2>
+        <p>
+            Décoration Faux Bois <br />
+            Dorure à la Feuille d'Or <br />
+            Sur les murs :
+            <ul>
+                <li>Papiers Peints</li>
+            </ul>
+        </p>
+        <p>
+            @Html.ActionLink("En Savoir Plus", "DisplaySkill", "Home", null, new { @class = "btn btn-default"})
+        </p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Notre Philosophie</h2>
+
+        <p>
+            @Html.ActionLink("En Savoir Plus", "DisplayPhilo", "Home", null, new { @class = "btn btn-default"})
+        </p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Nos Partenaires</h2>
+
+        <p>
+            @Html.ActionLink("En Savoir Plus", "DisplayPartners", "Home", null, new { @class = "btn btn-default"})
+        </p>
+    </div>
+</div>
