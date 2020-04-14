@@ -123,9 +123,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\CalendarController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -390,8 +390,10 @@
     <Content Include="Views\Menu\Services.cshtml" />
     <Content Include="Views\Menu\CourseDiy.cshtml" />
     <Content Include="Views\Menu\NewsEvents.cshtml" />
-    <Content Include="Views\Menu\Meeting.cshtml" />
-    <Content Include="Views\Calendar\Index.cshtml" />
+    <Content Include="Views\Services\Interior\Index.cshtml" />
+    <Content Include="Views\Services\Exterior\Index.cshtml" />
+    <Content Include="Views\Services\Glazing\Index.cshtml" />
+    <Content Include="Views\Services\Gold\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
