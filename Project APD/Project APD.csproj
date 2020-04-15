@@ -369,7 +369,15 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\jqueryServices.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Content\css\styleServices.css" />
+    <Content Include="Content\img\1.jpg" />
+    <Content Include="Content\img\2.jpg" />
+    <Content Include="Content\img\3.jpg" />
+    <Content Include="Content\img\4.jpg" />
+    <Content Include="Content\img\bg.jpg" />
+    <Content Include="Content\img\title.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
