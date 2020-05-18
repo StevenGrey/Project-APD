@@ -137,6 +137,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\style_tuiles.css" />
     <Content Include="Content\dhtmlxScheduler\dhtmlxscheduler-responsive-classic.css" />
     <Content Include="Content\dhtmlxScheduler\dhtmlxscheduler-responsive.css" />
     <Content Include="dhxscheduler.sample.mvc3.readme.txt" />
@@ -369,15 +370,8 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\js\jqueryServices.js" />
+    <Content Include="Scripts\js\modernizr-custom.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Content\css\styleServices.css" />
-    <Content Include="Content\img\1.jpg" />
-    <Content Include="Content\img\2.jpg" />
-    <Content Include="Content\img\3.jpg" />
-    <Content Include="Content\img\4.jpg" />
-    <Content Include="Content\img\bg.jpg" />
-    <Content Include="Content\img\title.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -405,6 +399,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\img\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

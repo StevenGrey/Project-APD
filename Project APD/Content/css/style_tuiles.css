@@ -1,0 +1,116 @@
+/*Tuile elle-même*/
+
+#least {
+  min-width: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 30px 0;
+  position: relative;
+  text-align: center;
+}
+
+
+/*Effet durant l'affichage lors d'un clic*/
+
+#least .least-preview {
+  background-color: whitesmoke;
+  border-bottom: 2px solid;
+  border-color: #f1f0f0;
+  padding: 50px 0;
+  margin-bottom: 30px;
+  display: none;
+}
+
+
+/*Gestion des dimensions de l'affichage lors d'un clic*/
+
+#least .least-preview img {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+/*Position des tuiles*/
+
+#least .least-gallery li {
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  margin: 0 10px 10px 0;
+}
+
+
+/*Position dans le petit encadré pour l'image de base*/
+
+#least .least-gallery li a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  width: 240px;
+  height: 150px;
+  -webkit-transition-property: outline-color;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-property: outline-color;
+  -moz-transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-property: outline-color;
+  -o-transition-duration: 0.3s;
+  -o-transition-timing-function: ease-in-out;
+  transition-property: outline-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  -webkit-backface-visibility: hidden;
+  outline-color: white; 
+}
+
+
+/*Effet lors du passage de la souris sur les tuiles*/
+
+#least .least-gallery li a:hover:before {
+  content: attr(data-subtitle);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  overflow: hidden;
+  letter-spacing: 1px;
+  color: white;
+  text-shadow: 1px 1px 1px #666666;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 175px;
+  font-weight: 200;
+  width: 240px;
+  height: 150px;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+#least .least-gallery li a:hover:after {
+  content: attr(title);
+  /* Default text: your a "title"-tag */
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  z-index: 2;
+  overflow: hidden;
+  margin: -30px 0 0 0;
+  border-bottom: 2px solid;
+  border-color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #666666;
+  letter-spacing: 1px;
+  color: white;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
