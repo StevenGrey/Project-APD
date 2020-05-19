@@ -1,26 +1,34 @@
-﻿@{
+﻿<head>
+    <link rel="stylesheet" href="~/Content/css/style_contact.css" type="text/css" media="screen" />
+</head>
+
+@{
     ViewBag.Title = "Contact";
 }
-<h1>@ViewBag.Title</h1>
 
-<div>
+
+
+<div class="formContact">
+    <h1>@ViewBag.Title</h1>
     <form>
         <p>
             @Html.RadioButton("informations2", "renseignements", true)
             @Html.Label("Renseignements")
+
             @Html.RadioButton("informations2", "devis", false)
             @Html.Label("Devis")
+
             @Html.RadioButton("informations2", "rdv", false)
             @Html.Label("Prendre Rendez-vous")
         </p>
 
 
         <p>
-            <input type="text" name="name" placeholder="Nom" required />
-            <input type="email" name="email" placeholder="E-mail" required />
-            <br/>
+            <input type="text" name="name" placeholder="Nom*" required />
+            <input type="email" name="email" placeholder="E-mail*" required />
+
             @Html.Label("Message")
-            @Html.TextArea("Message", "", new { @class = "form-control" })
+            @Html.TextArea("Message", "", 5, 50, new { @class = "form-control" })
         </p>
 
 
