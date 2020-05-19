@@ -1,29 +1,49 @@
-﻿
+﻿<head>
+    <link rel="stylesheet" href="~/Content/css/style_tuiles.css" type="text/css" media="screen" />
+</head>
+
 @{
     ViewBag.Title = "Services";
 }
 
 <h1>Services</h1>
 
-<div class="row">
-    <div class="col-md-4">
-        <h3>Décoration Interieur</h3>
-        @Html.ActionLink("Décoration Interieur", "InteriorDesign", "Services", null, new { @class = "btn btn-default" })
-    </div>
+<div class="content">
+    <section id='least'>
 
-    <div class="col-md-4">
-        <h3>Décoration Extérieur</h3>
-        @Html.ActionLink("Décoration Extérieur", "ExteriorDesign", "Services", null, new { @class = "btn btn-default" })
-    </div>
+        <ul class='least-gallery'>
 
-    <div class="col-md-4">
-        <h3>Dorure à la Feuille d'Or</h3>
-        @Html.ActionLink("Dorure à la Feuille d'Or", "GoldPlating", "Services", null, new { @class = "btn btn-default" })
-    </div>
+            <!--Décoration Intérieure-->
+            <li>
+                <a href='../Services/InteriorDesign/' title='Décoration' data-subtitle='Intérieure'>
+                    <img src='img/veilles/gatebox/gatebox02.jpg' alt='Erreur Image' />
+                </a>
+            </li>
 
-    <div class="col-md-4">
-        <h3>Vitrerie et Miroiterie</h3>
-        @Html.ActionLink("Vitrerie et Miroiterie", "GlazingMirrors", "Services", null, new { @class = "btn btn-default" })
-    </div>
+            <!--Décoration Extérieure-->
+            <li>
+                <a href='../Services/ExteriorDesign/' title='Décoration' data-subtitle='Extérieure'>
+                    <img src='img/veilles/gatebox/gatebox02.jpg' alt='Erreur Image' />
+                </a>
+            </li>
+
+            <!--Dorure à la feuille d'Or-->
+            <li>
+                <a href='../Services/GoldPlating/' title='Dorure' data-subtitle='à la feuille d Or'>
+                    <img src='img/veilles/gatebox/gatebox02.jpg' alt='Erreur Image' />
+                </a>
+            </li>
+
+            <!--Vitrerie et Miroiterie-->
+            <li>
+                <a href='../Services/GlazingMirrors/' title='Vitrerie' data-subtitle='et Miroiterie'>
+                    <img src='img/veilles/gatebox/gatebox02.jpg' alt='Erreur Image' />
+                </a>
+            </li>
+
+        </ul>
+    </section>
 </div>
 
+<!-- JavaScript -->
+<script type="text/javascript" src="~/Scripts/js/modernizr-custom.js"></script>

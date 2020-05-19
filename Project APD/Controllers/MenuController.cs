@@ -19,7 +19,7 @@ namespace Project_APD.Controllers
             return View("Services");
         }
 
-        public ActionResult DisplayDiy()    //Atelier et Cours de Bricolage
+        public ActionResult DisplayDiy()        //Atelier et Cours de Bricolage
         {
             return View("CourseDiy");
         }
