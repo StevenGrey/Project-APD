@@ -41,6 +41,5 @@ namespace Project_APD.Controllers
         {
             return View("Partners");
         }
-
     }
 }
