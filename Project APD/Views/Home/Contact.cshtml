@@ -10,9 +10,12 @@
 
 <div class="formContact">
     <h1>@ViewBag.Title</h1>
-    <form>
+
+
+    @using (Html.BeginForm("Index", "Contact", FormMethod.Post))
+    {
         <p>
-            @Html.RadioButton("informations2", "renseignements", true)
+            @Html.RadioButton("informations2", "renseignements", true, true)
             @Html.Label("Renseignements")
 
             @Html.RadioButton("informations2", "devis", false)
@@ -26,12 +29,12 @@
         <p>
             <input type="text" name="name" placeholder="Nom*" required />
             <input type="email" name="email" placeholder="E-mail*" required />
+            <input type="text" name="subject" placeholder="Sujet*" required />
 
             @Html.Label("Message")
             @Html.TextArea("Message", "", 5, 50, new { @class = "form-control" })
         </p>
-
-
+        
         <button>Envoyer</button>
-    </form>
+    }
 </div>
