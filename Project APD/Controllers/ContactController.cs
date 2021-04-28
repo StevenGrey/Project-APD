@@ -13,13 +13,13 @@ namespace Project_APD.Controllers
         public ActionResult Index()
         {
             /*Variables*/
-            
+
             string select;  //Sélection de la raison du contact (Renseignement, Devis, Prise de RDV)
             string name;    //Nom de la personne
             string mailExp; //Mail Expéditeur
             string subj;    //Sujet du Mail
             string msg;     //Corps du mail
-            
+
 
             /*Fin Variables*/
 
@@ -45,7 +45,7 @@ namespace Project_APD.Controllers
             // Corps
             email.Body = "Contenu de l'email au format texte";
 
-                
+
             /*Envoie du Mail*/
             SmtpClient smtp = new SmtpClient();
             smtp.Send(email);
