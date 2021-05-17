@@ -12,7 +12,7 @@ namespace Project_APD.Controllers
         // GET: Contact
         public ActionResult Index()
         {
-            /*Variables*/
+            /*Variables et Objets*/
 
             string select;  //Sélection de la raison du contact (Renseignement, Devis, Prise de RDV)
             string name;    //Nom de la personne
@@ -20,19 +20,38 @@ namespace Project_APD.Controllers
             string subj;    //Sujet du Mail
             string msg;     //Corps du mail
 
+            string targetAdress = "stevengrey45@gmail.com"; //Adresse Destinataire
+
+
+            SmtpClient smtp = new SmtpClient
+            {
+                Host = "smtp.orange.fr",
+                Port = 587,                
+                DeliveryMethod = SmtpDeliveryMethod.Network,
+                UseDefaultCredentials = false,
+                Credentials = new System.Net.NetworkCredential("legende_de_celine@hotmail.fr", "Fairytailsteven6"),
+                EnableSsl = true
+            };
 
             /*Fin Variables*/
 
-            /*Récupération des variables*/
+            /*Récupération des données saisies par l'utilisateur*/
             select = Request.Form["informations2"];
             name = Request.Form["name"];
             mailExp = Request.Form["email"];
             subj = Request.Form["subject"];
+            msg = Request.Form["Message"];
 
             /*Création de l'e-mail*/
 
-            MailMessage email = new MailMessage();
+            //MailMessage email = new MailMessage();
 
+            MailMessage email = new MailMessage(mailExp, targetAdress)
+            {
+                Subject = select + " : " + subj,
+                Body = msg + "\n\n" + name
+            };
+            /*
             // Expéditeur
             email.From = new MailAddress(mailExp);
 
@@ -43,11 +62,10 @@ namespace Project_APD.Controllers
             email.Subject = select + " : " + subj;
 
             // Corps
-            email.Body = "Contenu de l'email au format texte";
-
+            email.Body = msg;
+            */
 
             /*Envoie du Mail*/
-            SmtpClient smtp = new SmtpClient();
             smtp.Send(email);
 
             return View("About");
