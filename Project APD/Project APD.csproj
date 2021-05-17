@@ -400,6 +400,11 @@
     <Content Include="Views\Services\Glazing\Index.cshtml" />
     <Content Include="Views\Services\Gold\Index.cshtml" />
     <Content Include="Views\Services\Gold\Description.cshtml" />
+    <Content Include="Views\Services\Interior\Bathroom.cshtml" />
+    <Content Include="Views\Services\Interior\Kitchen.cshtml" />
+    <Content Include="Views\Services\Interior\Livingroom.cshtml" />
+    <Content Include="Views\Services\Interior\Bedroom.cshtml" />
+    <Content Include="Views\Services\Interior\Diningroom.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
