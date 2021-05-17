@@ -1,14 +1,56 @@
-﻿
+﻿<head>
+    <link rel="stylesheet" href="~/Content/css/style_tuiles.css" type="text/css" media="screen" />
+</head>
+
 @{
     ViewBag.Title = "Décoration Intérieur";
 }
 
 <h2>Décoration Intérieur</h2>
 
-<ul>
-    <li>Salon</li>
-    <li>Salle à Manger</li>
-    <li>Cuisine</li>
-    <li>Salle de Bain</li>
-    <li>Chambre</li>
-</ul>
+<div class="content">
+    <section id='least'>
+
+        <ul class='least-gallery'>
+
+            <!--Salon-->
+            <li>
+                <a href='../Services/InteriorDesign/' title='Salon' data-subtitle=''>
+                    <img src='img/veilles/gatebox/gatebox02.jpg' alt='Erreur Image' />
+                </a>
+            </li>
+
+            <!--Salle à Manger-->
+            <li>
+                <a href='../Services/ExteriorDesign/' title='Salle à Manger' data-subtitle=''>
+                    <img src='img/veilles/gatebox/gatebox02.jpg' alt='Erreur Image' />
+                </a>
+            </li>
+
+            <!--Cuisine-->
+            <li>
+                <a href='../Services/GoldPlating/' title='Cuisine' data-subtitle=''>
+                    <img src='img/veilles/gatebox/gatebox02.jpg' alt='Erreur Image' />
+                </a>
+            </li>
+
+            <!--Salle de Bain-->
+            <li>
+                <a href='../Services/GlazingMirrors/' title='Salle de Bain' data-subtitle=''>
+                    <img src='img/veilles/gatebox/gatebox02.jpg' alt='Erreur Image' />
+                </a>
+            </li>
+
+            <!--Chambre-->
+            <li>
+                <a href='../Services/GlazingMirrors/' title='Chambre' data-subtitle=''>
+                    <img src='img/veilles/gatebox/gatebox02.jpg' alt='Erreur Image' />
+                </a>
+            </li>
+
+        </ul>
+    </section>
+</div>
+
+<!-- JavaScript -->
+<script type="text/javascript" src="~/Scripts/js/modernizr-custom.js"></script>

@@ -29,6 +29,11 @@ namespace Project_APD.Controllers
             return View("Gold/Index");
         }
 
+        public ActionResult DescGoldPlating()           //Description Dorure à la Feuille d'Or
+        {
+            return View("Gold/Description");
+        }
+
         public ActionResult GlazingMirrors()        //Vitrerie et Miroiterie 
         {
             return View("Glazing/Index");

@@ -399,6 +399,7 @@
     <Content Include="Views\Services\Exterior\Index.cshtml" />
     <Content Include="Views\Services\Glazing\Index.cshtml" />
     <Content Include="Views\Services\Gold\Index.cshtml" />
+    <Content Include="Views\Services\Gold\Description.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
